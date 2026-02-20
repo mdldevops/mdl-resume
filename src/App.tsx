@@ -1,6 +1,8 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
+import me from '@/assets/me.jpg';
+
 export default function App() {
   return (
     <div className="min-h-screen py-10 px-4 font-sans text-gray-800 flex justify-center">
@@ -12,7 +14,7 @@ export default function App() {
           {/* Profile Image */}
           <div className="flex justify-center mt-2">
             <img
-              src="src/assets/me.jpg"
+              src={me}
               alt="Profile"
               className="w-40 h-40 rounded-full object-cover shadow-sm"
               referrerPolicy="no-referrer"
